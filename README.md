@@ -102,3 +102,37 @@ Verifies that all features meet functional and performance requirements.
 Reports bugs and works closely with developers to ensure timely fixes.
 
 
+
+Technology Stack
+This project leverages a modern, full-stack technology ecosystem to simulate the architecture of a production-grade booking platform. Each tool or framework plays a specific role in building, managing, and deploying the application:
+
+Django
+Purpose: A high-level Python web framework used for building the backend of the application. It handles routing, business logic, user authentication, and serves RESTful and GraphQL APIs.
+
+ MySQL
+Purpose: A powerful relational database used to store structured application data, such as user profiles, property listings, bookings, and reviews.
+
+ GraphQL
+Purpose: An API query language that allows clients to request exactly the data they need, making the application more efficient and flexible in fetching and updating data.
+
+Django REST Framework (DRF)
+Purpose: A toolkit built on Django for building robust RESTful APIs. Used alongside GraphQL for services that require REST compliance or simpler data exchange.
+
+JWT (JSON Web Tokens)
+Purpose: A secure method for transmitting user authentication data between frontend and backend. Used for stateless, token-based authentication.
+
+ Docker
+Purpose: Used to containerize the application, ensuring consistent environments across development, testing, and production.
+
+GitHub Actions
+Purpose: Enables CI/CD pipelines for automated testing and deployment of new code changes, ensuring stability and fast iteration.
+
+ HTML/CSS/JavaScript
+Purpose: Core frontend technologies used to build and style the user interface and ensure interactive client-side behavior.
+
+Pytest / Unittest
+Purpose: Frameworks for testing Django apps to ensure the correctness of backend functionality and catch bugs early in development.
+
+ Postman
+Purpose: A tool used for testing API endpoints and simulating client-server communication during development.
+

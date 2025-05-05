@@ -39,3 +39,66 @@ Implement and document key security measures to safeguard application data and e
 
 CI/CD Pipeline Integration:
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
+
+Team Roles
+In the development of the Airbnb Clone Project, each team member plays a critical role in ensuring the success of the application. Below is a breakdown of key roles and their responsibilities:
+
+🧠 Project Manager (PM)
+Oversees the project timeline, deliverables, and overall progress.
+
+Ensures team coordination and effective communication.
+
+Acts as the liaison between stakeholders and the development team.
+
+ Backend Developer
+Designs and implements the server-side logic using frameworks like Django.
+
+Develops RESTful and GraphQL APIs for front-end consumption.
+
+Handles authentication, authorization, and integration of business logic.
+
+Ensures performance, scalability, and security of backend services.
+
+🗃️ Database Administrator (DBA)
+Designs and maintains the relational database schema using MySQL.
+
+Ensures data integrity, security, and optimal performance through indexing and query optimization.
+
+Manages data migrations and backup strategies.
+
+🎨 Frontend Developer
+Builds and maintains user-facing features of the application.
+
+Works closely with UI/UX designers to implement responsive and intuitive interfaces.
+
+Integrates with backend APIs to render dynamic content.
+
+🔐 Security Specialist
+Implements and audits security features such as HTTPS, input validation, JWT/Token-based authentication.
+
+Protects against threats such as SQL injection, XSS, and CSRF.
+
+Ensures secure storage and transfer of sensitive user data.
+
+🔁 DevOps Engineer
+Sets up CI/CD pipelines for continuous integration and deployment.
+
+Manages containerization, orchestration, and environment configuration.
+
+Monitors application uptime, performance, and logs.
+
+📄 Technical Writer / Documentation Specialist
+Documents API endpoints, project structure, and developer workflows.
+
+Prepares guides for deployment, testing, and onboarding.
+
+Ensures all documentation is clear, comprehensive, and up-to-date.
+
+🧪 QA Engineer (Tester)
+Designs and executes manual and automated test cases.
+
+Verifies that all features meet functional and performance requirements.
+
+Reports bugs and works closely with developers to ensure timely fixes.
+
+

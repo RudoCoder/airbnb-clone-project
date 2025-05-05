@@ -136,3 +136,116 @@ Purpose: Frameworks for testing Django apps to ensure the correctness of backend
  Postman
 Purpose: A tool used for testing API endpoints and simulating client-server communication during development.
 
+
+Database Design
+This section describes the core database entities and their relationships, which are crucial for building a scalable and functional booking platform.
+
+🧑 Users
+Fields:
+
+id (Primary Key)
+
+name
+
+email (Unique)
+
+password_hash
+
+role (e.g., host, guest)
+
+Description: Represents both guests and hosts. A user can create listings (if a host), make bookings (if a guest), and leave reviews.
+
+🏠 Properties
+Fields:
+
+id (Primary Key)
+
+user_id (Foreign Key → Users)
+
+title
+
+location
+
+price_per_night
+
+Description: Represents a listing posted by a host. A user (host) can own multiple properties.
+
+📆 Bookings
+Fields:
+
+id (Primary Key)
+
+user_id (Foreign Key → Users)
+
+property_id (Foreign Key → Properties)
+
+start_date
+
+end_date
+
+status (e.g., confirmed, canceled)
+
+Description: Represents a reservation made by a user (guest) for a specific property.
+
+⭐ Reviews
+Fields:
+
+id (Primary Key)
+
+user_id (Foreign Key → Users)
+
+property_id (Foreign Key → Properties)
+
+rating (1–5)
+
+comment
+
+Description: Allows guests to leave feedback on properties after their stay. Each review is linked to one property and one user.
+
+💳 Payments
+Fields:
+
+id (Primary Key)
+
+booking_id (Foreign Key → Bookings)
+
+user_id (Foreign Key → Users)
+
+amount
+
+payment_status (e.g., pending, completed)
+
+Description: Represents a transaction associated with a booking. Tracks payment status and amount.
+
+🔗 Entity Relationships Summary
+A User can:
+
+Own multiple Properties.
+
+Make multiple Bookings.
+
+Leave multiple Reviews.
+
+Make multiple Payments.
+
+A Property:
+
+Belongs to one User (host).
+
+Can have multiple Bookings and Reviews.
+
+A Booking:
+
+Is made by a User (guest) for one Property.
+
+Has one associated Payment.
+
+A Review:
+
+Is written by a User for a Property.
+
+A Payment:
+
+Is tied to a Booking and the User who made it.
+
+

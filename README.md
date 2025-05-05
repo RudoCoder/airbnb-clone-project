@@ -277,3 +277,36 @@ Implements secure login and session management using technologies like JWT and h
 Admins can manage users, properties, and bookings. This centralized interface supports moderation, analytics, and platform oversight.
 
 
+
+API Security
+Securing the backend APIs is critical to protecting user data, financial transactions, and the overall integrity of the platform. The following key security measures will be implemented:
+
+🔑 Authentication
+What it is: Verifies the identity of users before granting access to protected routes using technologies like JWT (JSON Web Tokens).
+Why it matters: Ensures only registered users can log in, preventing unauthorized access to user accounts and personal information.
+
+🛂 Authorization
+What it is: Controls user access based on their roles (e.g., host, guest, admin).
+Why it matters: Ensures that users only perform actions they're allowed to—like preventing a guest from modifying a property listing or accessing admin routes.
+
+🧱 Input Validation and Sanitization
+What it is: Validates and sanitizes data before processing it, especially in forms and API requests.
+Why it matters: Protects the system from common attacks such as SQL Injection and Cross-Site Scripting (XSS).
+
+🚦 Rate Limiting and Throttling
+What it is: Limits the number of API requests a user or IP can make within a time window.
+Why it matters: Helps mitigate brute-force attacks and prevents abuse of server resources.
+
+🛡️ HTTPS and Secure Headers
+What it is: Enforces encrypted communication via HTTPS and adds security-related HTTP headers (e.g., Content-Security-Policy, X-Frame-Options).
+Why it matters: Prevents man-in-the-middle attacks and other vulnerabilities associated with unsecured connections.
+
+📜 Logging and Monitoring
+What it is: Tracks API usage, errors, and unusual activity using logging tools.
+Why it matters: Detects and responds to potential security breaches in real time.
+
+💳 Payment Security (PCI Compliance)
+What it is: Ensures secure handling of financial data through third-party providers and encryption standards.
+Why it matters: Protects users' payment information and maintains trust in the platform’s transaction process.
+
+
